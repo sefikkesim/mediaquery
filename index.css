@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+    padding: 0; 
+}
+.flex-container{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.flex-container__main{
+    width: 100%;
+}
+.flex-conainer__menu{
+    display: flex;
+    background-color: cyan;
+    flex-direction: column; 
+     
+}
+.flex-conainer__menu--link{
+    list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom:1px solid rgb(235, 229, 229);
+}
+
+.flex-container__content{
+    border: 10px solid red;
+    font-size: 30px;
+    margin-top: 150px;         
+}
+.flex-comtainer__content--exp-1{
+    padding: 2rem 0;
+}
+.flex-comtainer__content--exp-2{
+    display: none; 
+}
+@media screen and (min-width: 821px) {
+    .flex-container__main{
+        display: flex;
+        justify-content: center;
+    }
+    .flex-container{
+        background-color:rgb(255, 165, 0);
+     }
+    .flex-container__content{
+        background-color: green;
+        border: 10px solid blue;
+    }
+    .flex-comtainer__content--exp-1{
+        display: none;
+    }
+    .flex-comtainer__content--exp-2{
+        display: inherit;
+        padding: 3rem ; 
+    }
+    .flex-conainer__menu{
+        background-color:rgb(124, 122, 122);
+        flex-direction: row;
+    }
+    .flex-conainer__menu--link{
+        border: none;
+        padding: 1rem 6rem;    
+    }      
+}
+@media screen and (min-width: 1121px) {
+    .flex-container__main{
+        display: flex;
+    }   
+    .flex-container{
+        background-color:rgb(186,193, 107)
+    }
+    
+    .flex-conainer__menu{
+        display: flex;
+        width: 100%;  
+        justify-content: flex-end;
+    }  
+    .flex-conainer__menu--link{
+        color: white;
+        border: none;
+       padding: 1rem; 
+    }   
+    .flex-container__content{
+        width: 85%;
+        text-align: center;
+    }
+@media screen and (min-width: 1321px) {
+    .flex-container{
+        background-color:white
+    }
+    .flex-container__content{
+        width: 85%;
+        text-align: center;
+    }  
